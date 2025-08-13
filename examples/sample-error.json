@@ -1,0 +1,29 @@
+{
+  "message": "Database connection timeout after 30 seconds",
+  "name": "ConnectionTimeoutError", 
+  "code": "ETIMEDOUT",
+  "errno": -110,
+  "stack": "ConnectionTimeoutError: Database connection timeout after 30 seconds\n    at Pool.connect (/app/src/database/pool.js:45:23)\n    at UserRepository.findById (/app/src/repositories/user.js:28:18)\n    at UserService.getProfile (/app/src/services/user.js:15:12)\n    at UserController.profile (/app/src/controllers/user.js:22:8)\n    at /app/src/routes/api.js:45:5\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+  "request": {
+    "method": "GET",
+    "originalUrl": "/api/users/12345/profile",
+    "url": "/api/users/12345/profile",
+    "ip": "203.0.113.195",
+    "headers": {
+      "accept": "application/json",
+      "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "x-forwarded-for": "203.0.113.195",
+      "x-real-ip": "203.0.113.195",
+      "host": "api.myapp.com",
+      "connection": "keep-alive"
+    },
+    "query": {
+      "include": "preferences,settings",
+      "format": "json"
+    },
+    "params": {
+      "userId": "12345"
+    }
+  }
+}

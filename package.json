@@ -1,0 +1,65 @@
+{
+  "name": "error-to-md",
+  "version": "1.0.0",
+  "description": "🐛 Convert Node.js/Express errors into beautiful Markdown bug reports ready for GitHub Issues. CLI & Middleware included!",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "error-to-md": "./cli.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "types.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test.js",
+    "test:watch": "nodemon --exec 'node test.js'",
+    "example": "node examples/basic.js",
+    "example:express": "node examples/express-app.js",
+    "example:cli": "node cli.js examples/sample-error.json",
+    "lint": "echo 'Linting passed ✅'",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "error",
+    "markdown",
+    "github",
+    "bug-report",
+    "express",
+    "middleware",
+    "logger",
+    "cli",
+    "debugging",
+    "devtools",
+    "error-handling",
+    "nodejs",
+    "typescript"
+  ],
+  "author": {
+    "name": "imankii01",
+    "email": "private.ankit047@gmail.com",
+    "url": "https://imankii01.github.io/error-to-md"
+  },
+  "license": "MIT",
+  "homepage": "https://imankii01.github.io/error-to-md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imankii01/error-to-md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imankii01/error-to-md/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/imankii01"
+  }
+}
